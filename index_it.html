@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>#swisspanorama360 - 360-degrees panoramas with peak names of Switzerland's beautiful mountains and landscapes.</title>
+	<title>#swisspanorama360 - Panorami a 360 gradi con nomi di vette delle splendide montagne e dei paesaggi svizzeri.</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -27,8 +27,8 @@
 <!--			<br>
 			<span style="font-size: smaller;"><a href="https://swisspanorama360.github.io">https://swisspanorama360.github.io</a></span>-->
 		</td>
-		<td style="text-align:center; padding: 10px; font-size: smaller;">360-degrees panoramas with peak names of Switzerland's beautiful mountains and landscapes.</td>
-		<td style="text-align:right; padding: 0px; font-size: smaller;"><i><nobr><span style="background-color: navajowhite; font-weight: bold;"><a href="./index.html">English</a></span> / <a href="./index_de.html">Deutsch</a> / <a href="./index_fr.html">Fran&ccedil;ais</a> / <a href="./index_it.html">Italiano</a></nobr></i></td>
+		<td style="text-align:center; padding: 10px; font-size: smaller;">Panorami a 360 gradi con nomi di vette delle splendide montagne e dei paesaggi svizzeri.</td>
+		<td style="text-align:right; padding: 0px; font-size: smaller;"><i><nobr><a href="./index.html">English</a> / <a href="./index_de.html">Deutsch</a> / <a href="./index_fr.html">Fran&ccedil;ais</a> / <span style="background-color: navajowhite; font-weight: bold;"><a href="./index_it.html">Italiano</a></span></nobr></i></td>
 	</tr>
 </tbody></table>
 
@@ -43,14 +43,14 @@
 		<td style="width: 100%; text-align:left; padding: 0px; background-color: Lavender;">
 
 <p>
-	<b>Filter for peak names or coordinates:</b>
+	<b>Filtra per i nomi dei cime o coordinate:</b>
 	<input id="peakNameFilterInput" oninput="updateAll()" style="width: 10%; text-align:left;"/>
 	&mdash;
-	Filter for minmum elevation in meters: <input id="peakElevFilterInput" oninput="updateAll()" style="width: 5%; text-align:right;" />
+	Filtro per elevazione minima in metri: <input id="peakElevFilterInput" oninput="updateAll()" style="width: 5%; text-align:right;" />
 	&mdash;
-	Limit to <input id="limitInput" oninput="updateAll()" value="5" style="width: 5%; text-align:right;"/> hits.
+	Limita a <input id="limitInput" oninput="updateAll()" value="5" style="width: 5%; text-align:right;"/> colpi.
 	&mdash;
-	<span id="peakCount">...</span> panoramas.
+	<span id="peakCount">...</span> panorami.
 </p>
 		</td>
 	<tr>
@@ -71,43 +71,40 @@
 
 <table width="100%"><tbody>
 	<tr>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b><nobr>About this project:</nobr></b></td>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller;">swisspanorama360 is a collection of panoramic view images of Switzerland's mountains and landscapes.
-        The image files are in JPEG format of size 6283 x 1047 pixels, each about 0.5 to 1.5 MB large.
-        The images are computer-generated from free, open data (satellite images, elevation data, mountain peak names).</td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b><nobr>A proposito di questo progetto:</nobr></b></td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller;">swisspanorama360 è una raccolta di immagini panoramiche delle montagne e dei paesaggi svizzeri.
+         I file di immagine sono in formato JPEG di dimensioni 6283 x 1047 pixel, ciascuno grande da 0,5 a 1,5 MB circa.
+         Le immagini sono generate al computer da dati aperti e gratuiti (immagini satellitari, dati di elevazione, nomi di vette).</td>
 	</tr>
 	<tr>
 		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Disclaimer:</b></td>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller;">All panoramas are provided "as is" with absolutely no warranty. They may contain errors and omissions. 
-    The near-field region is fuzzy, buildings and trees are not shown. The observer location may be inaccessible or dangerous.</td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller;">Tutti i panorami sono forniti "così come sono" senza alcuna garanzia. Possono contenere errori ed omissioni.
+     La regione del campo vicino è sfocata, gli edifici e gli alberi non vengono mostrati. La posizione dell'osservatore potrebbe essere inaccessibile o pericolosa.</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Data sources:</b></td>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller;">The panoramas were created based on freely available and usable open data sets. Many thanks to:<br>
-      + NASA DEM <a href="http://viewfinderpanoramas.org">viewfinderpanoramas.org</a> maintained by Jonathan de Ferranti.<br>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Origine dei dati:</b></td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller;">I panorami sono stati creati sulla base di set di dati aperti liberamente disponibili e utilizzabili. Molte grazie a:<br>
+      + NASA DEM <a href="http://viewfinderpanoramas.org">viewfinderpanoramas.org</a> mantenuto da Jonathan de Ferranti.<br>
           + Contains modified Copernicus Sentinel data (2018), swisstopo/NPOC, see: <a href="https://www.npoc.ch/en/services/products.html">Swiss NPOC (National Point of Contact) for Satellite Images</a>.<br>
-      + <a href="http://gipfelverzeichnis.ch">gipfelverzeichnis.ch</a> by Christian Thöni.<br>
+      + <a href="http://gipfelverzeichnis.ch">gipfelverzeichnis.ch</a> da Christian Thöni.<br>
       + <a href="http://en.wikipedia.org">wikipedia.org</a><br>
       + <a href="http://map.geo.admin.ch">map.geo.admin.ch</a><br>
       + <a href="http://openstreetmap.org">openstreetmap.org</a>.<br></td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Accuracy:</b></td>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller;">The panoramas give a realistic 360-degrees view of the medium and long distance;
-    however, they do not show details at short distance, such as trees or buildings.
-    Pixel size (from satellite images) is 10 meters. Elevations are approximately +/-20 m accurate.
-    Peak name positions may deviate several hundred meters, since locations in the data source are only 1 km accurate.
-    Panoramas are computed for a range up to 300 km.
-    Using WGS84 and ECEF-ENU-polar projection to avoid angle error of CH1903 and account for earth curvature
-    and precise azimuth angles.</td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Precisione:</b></td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller;">I panorami offrono una visione realistica a 360 gradi della media e lunga distanza; tuttavia, non mostrano dettagli a breve distanza, come alberi o edifici.
+     La dimensione dei pixel (dalle immagini satellitari) è di 10 metri. Le elevazioni sono accurate di circa +/-20 m.
+      Le posizioni dei nomi dei cime possono deviare di diverse centinaia di metri, poiché le posizioni nell'origine dati hanno una precisione di solo 1 km.
+      I panorami sono calcolati per un raggio fino a 300 km.
+      Utilizzo della proiezione polare WGS84 e ECEF-ENU per evitare l'errore angolare di CH1903 e tenere conto della curvatura terrestre e degli angoli di azimut precisi.</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Licence:</b></td>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller;">Panorama images are freely available under the
-    <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.</td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Licenza:</b></td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller;">Le immagini panoramiche sono disponibili gratuitamente sotto il <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Alternatives:</b></td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Alternative:</b></td>
 		<td style="vertical-align:top; padding: 10px; font-size: smaller;"><a href="https://www.google.com/intl/de/earth">Google Earth</a>,
        <a href="https://www.peakfinder.org">peakfinder.org</a>,
        <a href="https://www.udeuschle.de/panoramas">Ulrich Deuschle Panoramas</a>,
@@ -115,16 +112,15 @@
        swisstopo app, ...</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>About us:</b></td>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller;">(Legal notice) Owner and creator of the panoramas and this website: Markus Meier, CH-4462 Rickenbach BL,
-     Switzerland, contact: mmturgi(at)yahoo.de.</td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Chi siamo:</b></td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller;">(Avviso legale) Proprietario e creatore dei panorami e di questo sito web: Markus Meier, CH-4462 Rickenbach BL, Svizzera, contatto: mmturgi(at)yahoo.de.</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Last update:</b></td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Ultimo aggiornamento:</b></td>
 		<td style="vertical-align:top; padding: 10px; font-size: smaller;">2021-11-02</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>All panoramas:</b></td>
+		<td style="vertical-align:top; padding: 10px; font-size: smaller; background-color: Lavender;"><b>Tutti i panorami:</b></td>
 		<td style="vertical-align:top; padding: 10px; font-size: smaller;">			<a target="_blank" href="acheberg_b._klingnau_n47.5868_e8.2608/index.html">Acheberg b. Klingnau</a>, 
 			<a target="_blank" href="aebeni_flue_n46.5078_e7.9539/index.html">Äbeni Flue</a>, 
 			<a target="_blank" href="aetschberg_n47.4346_e9.3145/index.html">Ätschberg</a>, 
