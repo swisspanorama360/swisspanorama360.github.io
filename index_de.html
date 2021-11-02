@@ -134,7 +134,6 @@
 
 </tbody></table>
 
-
 <script>
 var mymap = L.map('mapid').setView([46.77, 8.60], 8);
 
@@ -156,7 +155,6 @@ addTileLayer();
 
 updateAll();
 
-
 function addTileLayer() {
 	L.tileLayer(' https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {
 		maxZoom: 18,
@@ -169,12 +167,10 @@ function addTileLayer() {
 	}).addTo(mymap);
 }
 
-
 function updateAll() {
 	updatePanoramasOnMap();
 	updatePanoramaListTable();
 }
-
 
 function updatePanoramasOnMap() {
 	var input = document.getElementById("peakNameFilterInput").value.toLowerCase();
@@ -209,7 +205,6 @@ function updatePanoramasOnMap() {
 	}
 	document.getElementById("peakCount").textContent = "" + count;
 }
-
 
 function updatePanoramaListTable() {
 	var input = document.getElementById("peakNameFilterInput").value.toLowerCase();
@@ -274,7 +269,6 @@ function updatePanoramaListTable() {
 	document.getElementById("peakCount").textContent = "" + count;
 }
 
-
 function stringContainsTokens(aString, tokens) {
 	if (tokens == undefined) {
 		return true;
@@ -286,7 +280,6 @@ function stringContainsTokens(aString, tokens) {
 	}
 	return true;
 }
-
 
 function elevRangeOk(elev, inputElev) {
 	var ie = parseInt(inputElev);
